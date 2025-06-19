@@ -1,0 +1,63 @@
+/* 1. Box-sizing, margins, padding – poof, begone! */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Base styles for a smooth ride */
+html, body {
+  height: 100%;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+/* 3. Lists, be cool */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 4. Links with zero strings attached */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 5. Media that minds its space */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 6. Forms behaving nicely */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* 7. Buttons that don’t act like divas */
+button {
+  cursor: pointer;
+}
+
+/* 8. Tables behaving like actual tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
