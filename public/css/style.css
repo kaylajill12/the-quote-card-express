@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 0.7),
+    rgba(255, 165, 0, 0.7),
+    rgba(255, 255, 0, 0.7),
+    rgba(0, 128, 0, 0.7),
+    rgba(0, 0, 255, 0.7),
+    rgba(75, 0, 130, 0.7),
+    rgba(238, 130, 238, 0.7)
+  );
+  z-index: -1;
+}
+
+.quote-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 3.5px solid black;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  max-width: 800px;
+  text-align: center;
+  color: #333;
+}
+
+.quote-text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.4;
+  position: relative;
+  margin: 0;
+}
+
+.quote-text::before {
+  content: "“";
+  font-size: 3rem;
+  position: absolute;
+  left: -1.5rem;
+  top: -1rem;
+}
+
+.quote-text::after {
+  content: "”";
+  font-size: 3rem;
+  position: absolute;
+  right: -1.5rem;
+  bottom: -1rem;
+}
+
+.author-text {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
